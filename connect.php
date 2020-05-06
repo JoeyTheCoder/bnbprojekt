@@ -8,7 +8,7 @@
 	$mail = $_POST['mail'];
 	$zimmer = $_POST['zimmer'];
 	
-	$conn = new mysqli('localhost', 'root','','zimmer');{
+	$conn = new mysqli('localhost', 'joel','L9nNd5$dSbvG','zimmer');{
 		if($conn->connect_error){
 			die('Connection Failed : '.$conn->connect_error);
 		}else{
