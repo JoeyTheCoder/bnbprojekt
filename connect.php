@@ -23,51 +23,11 @@
 				alert('Feld noch leer');}
 			else{
 			$stmt->execute();
-			echo '<a href="/index.html">Link</a>';
+                echo "<script>window.location = '../bnbProjekt/#confirmation'</script>";
 			$stmt->close();
 			$conn->close();
 			}
 		}
 	}
-if (!empty($fname) || !empty($lname) || !empty($sdate) || !empty($edate)){
-    $host = "localhost";
-    $dbUsername = 'root';
-    $dbPassword = "";
-    $dbname = "zimmer";
-    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-
-    //Database connection
-
-    if (mysqli_connect_error()) {
-        die('Connect Error('. mysqli_connect_error().')'. mysqli_connect_error());
-    } else {
-        $SELECT = "SELECT mail FROM zimmer Where mail = ? Limit 1";
-        $INSERT = "INSERT Into zimmer (fname, lname, sdate, edate, mail) values(?, ?, ?, ?, ')";
-
-
-        $stmt = $conn->prepare($SELECT);
-        $stmt->bind_param("s", $mail);
-        $stmt->execute();
-        $stmt->bind_result($mail);
-        $stmt->store_result();
-        $rnum = $stmt->num_rows;
-
-        if ($rnum==0) {
-            $stmt->close();
-
-            $stmt = $conn->prepare($INSERT);
-            $stmt->bind_param("ssdds", $fname, $lname, $sdate, $edate, $mail);
-            $stmt->execute();
-            echo "New record inserted sucessfully";
-        }else{
-            echo "Someone already register using this mail";
-        }
-        $stmt->close();
-        $conn->close();
-    }
-}else {
-    echo "All field are required";
-    die();
-}
 
 ?>

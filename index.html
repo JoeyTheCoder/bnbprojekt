@@ -7,10 +7,12 @@
 <html lang="de">
 	<head>
 		<title>Dimension by HTML5 UP</title>
-		<meta charset= "ufo-8">
+		<meta charset= "utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://www.google.com/recaptcha/api.js?render=6Ld3jPMUAAAAANn7xeaBDnbYsf9m-f06F9Uw8sE5"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body class="is-preload">
 
@@ -33,8 +35,9 @@
 								<li><a href="#intro">Info</a></li>
 								<li><a href="#work">Unterkunft</a></li>
 								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Wegbeschreibung</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#weg">Anreise</a></li>
+								<li><a href="#ausflug">Ausflüge</a></li>
+								<li><a href="#contact">Kontakt</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -49,12 +52,34 @@
 								<span class="image main"><img style="height: auto; width: 10%;" src="images/wappen.png" alt="" /></span>
 								<p>Walenstadt ist eine politische Gemeinde im Süden des schweizerischen Kantons St. Gallen. Sie liegt am Ostufer des Walensees im Wahlkreis Sarganserland und umfasst die vier Ortsgemeinden Walenstadt, Tscherlach, Berschis und Walenstadtberg. Sie gehört mit 45.81 km² Fläche zu den flächenmässig grösseren Gemeinden des Kantons. </p>
 							</article>
+						<article id="weg">
+								<h2 class="major">Wegbeschreibung</h2>
+							<span class="image main"><img src="images/map.PNG" alt="" /></span>
+								<p>Walenstadt ist vom Flughafen Zürich aus ganz einfach zu erreichen.<br>Vom Flughafen aus kann man mit dem Zug zum Zürcher Hauptbahnhof gelangen.<br>Am Hauptbahnhof gibt es eine direkte Verbindung nach Walenstadt.<br>Zwischen 6:12 & 23:12 Uhr, gibt es stündlich den Regioexpress, welcher direkt nach Walenstadt fährt.</p>
+							</article>
+
+						<article id="ausflug">
+							<h2 class="major">Ausflüge</h2>
+
+							<h3>Das Paxmal</h3>
+							<span class="image main"><img src="images/paxmal.jpg" alt="" /></span>
+							<p>
+								Dem Paxmal liegt der Urgedanke des Friedens für jeden und alle zu Grunde. Das Lebenswerk und pazifistische Gesamtkunstwerk wurde von Karl Bickel von 1924 bis 1949 erbaut. Es liegt hoch über dem Walensee vor den aufsteigenden Wänden der Churfirsten.
+								Der bekannte Schweizer Markenstecher, Künstler und Grafiker erschuf das Monument in 25 Jahren in der Einsamkeit unter materiellen und gesellschaftlichen Entbehrungen und mit grosser Selbstdisziplin. Das Paxmal (Friedensmal) ist keine Kultstätte, sondern ein stiller, friedlicher Ort für innere Sammlung, Einkehr und Meditation.
+
+								Die linke Wand des Monuments stellt das erdverbundene Leben dar: Das Menschenpaar in seinem Sein und Werden, Liebe und Zeugung. Die rechte Wand ist dem geistigen Leben gewidmet: Die Erwachenden, die Ringenden, die Schauenden und die Aufgehenden. Das unvergleichliche Kunstwerk regt an zur Meditation und Reflexion über uns und unsere Gesellschaftsformen auf dem Weg zum umfassenden, schaffenden und guten Menschen.
+							</p>
+							<p>Weitere Infos finden Sie auf der <a href="https://www.schweizmobil.ch/de/wanderland/services/sehenswuerdigkeiten/sehenswuerdigkeit-0138.html"><strong>Webseite</strong></a> von Paxmal</p>
+							<p>Einen Flyer dazu können Sie <a href="images/flyer.pdf" download><strong>Hier</strong></a> herunterladen</p>
+						</article>
 
 						<article id="buchung">
 							<h2 class="major">Buchen</h2>
+
+
 							<main>
 								<br>
-								
+
 								<h3>Bitte geben sie folgene Daten ein:</h3>
 								<div class="liste">
 									<form action="./connect.php" method="POST">
@@ -94,6 +119,15 @@
 										</table>
 									</form>
 								</div>
+
+								<script>
+
+									grecaptcha.ready(function() {
+										grecaptcha.execute('6Ld3jPMUAAAAANn7xeaBDnbYsf9m-f06F9Uw8sE5', {action: 'homepage'}).then(function(token) {
+											console.log(token);
+										});
+									});
+								</script>
 							</main>
 						</article>
 
@@ -135,36 +169,15 @@
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 							</article>
+						<article id="confirmation">
+							<h2 class="major">Bestätigung</h2>
+							<p>Vielen Dank für Ihre Buchung, Sie wurden in unserer Datenbank erfasst</p>
+						</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								<p><strong>Kontakt-Adresse</strong></p><p>Joel Sahli<br/>Widenbachstrasse 24<br/>8880 Walenstadt<br/>Schweiz</p><p>E-Mail:<br/>joel.sahli@outlook.com</p><p>&nbsp;</p><p><strong>Haftungsausschluss</strong></p>Der Autor &uuml;bernimmt keinerlei Gew&auml;hr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualit&auml;t, Zuverl&auml;ssigkeit und Vollst&auml;ndigkeit der Informationen.</p><p>Haftungsanspr&uuml;che gegen den Autor wegen Sch&auml;den materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der ver&ouml;ffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische St&ouml;rungen entstanden sind, werden ausgeschlossen.</p><p>Alle Angebote sind unverbindlich. Der Autor beh&auml;lt es sich ausdr&uuml;cklich vor, Teile der Seiten oder das gesamte Angebot ohne besondere Ank&uuml;ndigung zu ver&auml;ndern, zu erg&auml;nzen, zu l&ouml;schen oder die Ver&ouml;ffentlichung zeitweise oder endg&uuml;ltig einzustellen.</p><p>&nbsp;</p><p><strong>Haftungsausschluss f&uuml;r Links</strong></p><p>Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung f&uuml;r solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des jeweiligen Nutzers.</p><p>&nbsp;</p><p><strong>Urheberrechte</strong></p><p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, geh&ouml;ren ausschliesslich <strong>Joel Sahli</strong> oder den speziell genannten Rechteinhabern. F&uuml;r die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtstr&auml;gers im Voraus einzuholen.</p><p>&nbsp;</p><!--ACHTUNG: Wenn Sie die Quelle ohne Erlaubnis von SwissAnwalt entfernen, dann begehen Sie eine Urheberrechtsverletzung welche in jedem Fall geahndet wird.--></a><!--Bitte beachten Sie die AGB von SwissAnwalt betreffend allf&auml;llig anfallenden Kosten bei Weglassen der Quelle!-->
 							</article>
 
 						<!-- Elements -->
@@ -413,7 +426,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Joel Sahli.</p>
+						<h2 class="copyright">&copy; Joel Sahli.</h2>
 					</footer>
 
 			</div>
@@ -422,6 +435,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
