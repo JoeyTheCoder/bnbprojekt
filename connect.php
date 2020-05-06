@@ -23,7 +23,7 @@
 				alert('Feld noch leer');}
 			else{
 			$stmt->execute();
-                echo "<script>window.location = '../bnbProjekt/#confirmation'</script>";
+                echo "<script>window.location = 'https://bnbprojekt.tscherlachwalking.ch/#confirmation'</script>";
 			$stmt->close();
 			$conn->close();
 			}
