@@ -8,7 +8,7 @@
 	$mail = $_POST['mail'];
 	$zimmer = $_POST['zimmer'];
 	
-	$conn = new mysqli('https://summer.metanet.ch:8443/domains/databases/phpMyAdmin/db_structure.php?server=1&db=bnb', 'joel','L9nNd5$dSbvG','bnb');{
+	$conn = new mysqli('localhost', 'joel','L9nNd5$dSbvG','bnb');{
 		if($conn->connect_error){
 			die('Connection Failed : '.$conn->connect_error);
 		}else{
