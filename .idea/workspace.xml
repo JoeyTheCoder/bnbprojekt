@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba37784-eaff-4ddf-bdf2-1661e0eb8481" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,15 +20,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bXvkXU2vCfkU7yl2gXW3txP30e" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joels\Documents\bnbprojekt\images" />
       <recent name="C:\xampp\htdocs\BnBProjekt\images" />
       <recent name="C:\xampp\htdocs\BnBProjekt" />
     </key>
@@ -57,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588791395254</updated>
       <workItem from="1588791396501" duration="11737000" />
-      <workItem from="1588807417202" duration="1456000" />
+      <workItem from="1588807417202" duration="2013000" />
     </task>
     <servers />
   </component>
